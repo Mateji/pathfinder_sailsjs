@@ -1,0 +1,10 @@
+database model
+
+character:
+player, campaign, xp, name, race, size, sex, abilities, skills, feats, special abilities
+
+abilities:
+strength,dexterity,constitution,intelligence,wisdom,charisma
+
+ability
+
