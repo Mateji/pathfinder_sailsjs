@@ -10,7 +10,7 @@ module.exports = {
 		abilityScore: {
 			type: 'integer',
 			defaultsTo: 10
-		}
+		},
 
 		abilityItemBonus: {
 			type: 'integer',
