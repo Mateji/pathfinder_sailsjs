@@ -9,7 +9,7 @@ module.exports = {
 			type: 'string'
 		},
 		type: {
-			type: 'string'
+			type: 'string',
 			enum: ['Feats', 'Item Creation Feats', 'Metamagic Feats']
 		},
 		combatFeat: {
