@@ -12,7 +12,7 @@ module.exports = {
 
 
 
-		player: { model: 'Player' },
+		//player: { model: 'Player' },
 		abilities: { collection: 'Ability' },
 		race: { collection: 'Race' },
 		classes: { collection: 'Class' },

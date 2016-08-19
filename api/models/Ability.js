@@ -20,11 +20,11 @@ module.exports = {
 		abilityTempScore: {
 			type: 'integer',
 			defaultsTo: 10
-		}
+		},
 
 		getAbilityModifier: function() {
 			return ((this.abilityScore + abilityItemBonus) - 10) / 2;
-		}
+		},
 
 		getAbilityTempModifier: function() {
 			return (this.abilityTempScore - 10) / 2

@@ -14,7 +14,7 @@ module.exports = {
 		},
 		combatFeat: {
 			type: 'boolean'
-		}
+		},
 		prerequisites: { collection: 'feat' }, // caster level?
 		benefits: {
 			type: 'string'
