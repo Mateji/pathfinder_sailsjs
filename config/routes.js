@@ -54,17 +54,18 @@ module.exports.routes = {
     controller: 'test',
     action: 'index'
   },
-  '/signup' : {
-   controller: 'main',
-   action: 'signup'
+
+  'get /login': {
+    view: 'login'
   },
-  '/login' : {
-   controller: 'main',
-   action: 'login'
-  },
-  '/chat' : {
-   controller: 'main',
-   action: 'chat'
+
+  'post /login': 'AuthController.login',
+
+  '/logout': 'AuthController.logout',
+
+  'get /signup': {
+    view: 'signup'
   }
+
 
 };
