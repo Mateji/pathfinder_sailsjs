@@ -23,6 +23,9 @@ module.exports = {
 	  		var obj = this.toObject();
 	  		delete obj.password;
 	  		return obj;
+	  	},
+	  	characters: {
+	  		collection: 'Character'
 	  	}
   	
 	},
@@ -31,7 +34,7 @@ module.exports = {
   			bcrypt.hash(user.password, salt, function(err, hash) {
   				if (err) {
   					console.log(err);
-	  				cb(err);
+	  				cb(err); 
 	  			} else {
 	  				user.password = hash;
 	  				cb();

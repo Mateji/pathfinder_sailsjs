@@ -12,7 +12,7 @@ module.exports = {
 
 
 
-		//player: { model: 'Player' },
+		owner: { model: 'User' },
 		abilities: { collection: 'Ability' },
 		race: { collection: 'Race' },
 		classes: { collection: 'Class' },
