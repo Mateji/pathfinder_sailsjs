@@ -1,0 +1,32 @@
+<div class="container">
+	<h1>Feats</h1>
+
+	<table class="table">
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Type</th>
+			<th>Prerequisites</th>
+			<th>Benefits</th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+
+		<% _.each(model, function(feat) { %>
+		<tr>
+			<td><%= feat.name %></td>
+			<td><%= feat.description %></td>
+			<td><%= feat.type %></td>
+			<td><%= feat.prerequisites %></td>
+			<td><%= feat.benefits %></td>
+			<td><a href="/feat/show/<%= feat.id %>">Show</a></td>
+			<td><a href="/feat/edit/<%= feat.id %>">Edit</a></td>
+			<td><a href="/feat/destroy/<%= feat.id %>">Delete</a></td>
+		</tr>
+
+		<% }) %>
+
+
+	</table>
+</div>
