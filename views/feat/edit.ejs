@@ -1,0 +1,13 @@
+<h1> Editing feat </h1>
+<form action="/feat/update/<%= feat.id %>" method="POST">
+
+	<div>Name: <input value="<%= feat.name %>" name="name" type="text"/></div>
+	<div>Description: <input value="<%= feat.description %>" name="description" type="text"/></div>
+	<div>Type: <input value="<%= feat.type %>" name="type" type="text"/></div>
+	<div>Prerequisites: <input value="<%= feat.prerequisites %>" name="prerequisites" type="text"/></div>
+	<div>Benefits: <input value="<%= feat.benefits %>" name="benefits" type="text"/></div>
+	<input type="submit"/>
+</form>
+
+<a href="/feat/edit/<%= feat.id %>">Edit</a> | 
+<a href="/feat">Back</a>

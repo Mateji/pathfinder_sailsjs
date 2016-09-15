@@ -25,7 +25,8 @@ module.exports = {
 	  		return obj;
 	  	},
 	  	characters: {
-	  		collection: 'Character'
+	  		collection: 'character',
+	  		via: 'owner'
 	  	}
   	
 	},
